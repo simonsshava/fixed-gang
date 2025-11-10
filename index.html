@@ -1,159 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fixed Gang Website</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fixed Gang Welfare Association</title>
+    <meta name="description" content="Fixed Gang Welfare Association — Training members in savings, investments and dividends. Join our meetings and save with us.">
+    <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+    <!-- Skip link for keyboard users -->
+    <a class="skip-link" href="#maincontent">Skip to main content</a>
 
-    <!-- Header Section -->
-    <section class="header">
-        <nav>
-            <a href="index.html"><img src="logo.png" alt="Fixed Gang Logo"></a>
-            <div class="nav-links" id="navLinks">
-                <i class="fa fa-times" onclick="hideMenu()"></i>
+    <header class="site-header" role="banner">
+        <nav class="site-nav" role="navigation" aria-label="Primary">
+            <a class="logo" href="index.html">
+                <img src="logo.png" alt="Fixed Gang logo" width="120" height="auto">
+            </a>
+
+            <!-- Mobile menu toggle: use button for accessibility -->
+            <button id="navToggle" class="nav-toggle" aria-controls="primaryMenu" aria-expanded="false" aria-label="Open menu">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </button>
+
+            <div id="primaryMenu" class="nav-links" hidden>
+                <button class="nav-close" id="navClose" aria-label="Close menu">
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                </button>
+
                 <ul>
-                    <li><a href="">HOME</a></li>
-                    <li><a href="">ABOUT</a></li>
-                    <li><a href="">STAFFS</a></li>
-                    <li><a href="">BLOG</a></li>
-                    <li><a href="">CONTACT</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#staffs">Staffs</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
-            <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
 
-        <div class="text-box">
+        <div id="home" class="hero text-box">
             <h1>Maseno's Biggest Banker</h1>
-            <p>Fixed Gang Welfare Association is becoming the biggest banker in Kenya through giving loans.<br> You are welcome to join.</p>
-            <a href="" class="hero-btn">Visit us to know more</a>
+            <p>Fixed Gang Welfare Association is becoming the biggest banker in Kenya through giving loans. You are welcome to join.</p>
+            <a href="#about" class="hero-btn">Visit us to know more</a>
         </div>
-    </section>
+    </header>
 
-    <!-- Courses Section -->
-    <section class="course">
-        <h1>Courses We Offer</h1>
-        <p>Training members on how to save their money in a SACCO</p>
+    <main id="maincontent" role="main">
+        <!-- Courses Section -->
+        <section id="about" class="course" aria-labelledby="courses-heading">
+            <h2 id="courses-heading">Courses We Offer</h2>
+            <p>Training members on how to save their money in a SACCO.</p>
 
-        <div class="row">
-            <div class="course-col">
-                <h3>Investments</h3>
-                <p>We teach members to invest in businesses and earn dividends distributed based on share ratios.</p>
-            </div>
-            <div class="course-col">
-                <h3>Savings</h3>
-                <p>Members learn how to save money. Each member is expected to save at least Ksh 1,000 monthly.</p>
-            </div>
-            <div class="course-col">
-                <h3>Dividends</h3>
-                <p>Members earn dividends from profits during AGMs. Attendance is mandatory.</p>
-            </div>
-        </div>
-    </section>
+            <div class="row">
+                <article class="course-col" aria-labelledby="investment">
+                    <h3 id="investment">Investments</h3>
+                    <p>We teach members to invest in businesses and earn dividends distributed based on share ratios.</p>
+                </article>
 
-    <!-- Office Section -->
-    <section class="office">
-        <h1>Our National Offices</h1>
-        <p>Located in Kisumu City near Moghe Plaza, opposite KCB Bank</p>
+                <article class="course-col" aria-labelledby="savings">
+                    <h3 id="savings">Savings</h3>
+                    <p>Members learn how to save money. Each member is expected to save at least Ksh 1,000 monthly.</p>
+                </article>
 
-        <div class="row">
-            <div class="office-col">
-                <img src="london.png" alt="Graduation Square">
-                <div class="layer"><h3>GRADUATION SQUARE</h3></div>
+                <article class="course-col" aria-labelledby="dividends">
+                    <h3 id="dividends">Dividends</h3>
+                    <p>Members earn dividends from profits during AGMs. Attendance is mandatory.</p>
+                </article>
             </div>
-            <div class="office-col">
-                <img src="ren.jpg" alt="Chairman Addressing">
-                <div class="layer"><h3>CHAIRMAN ADDRESSING</h3></div>
-            </div>
-            <div class="office-col">
-                <img src="u.png" alt="Some Members">
-                <div class="layer"><h3>SOME MEMBERS</h3></div>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Facilities Section -->
-    <section class="facilities">
-        <h1>Our Main Sponsors</h1>
-        <p>Our main source of funds is member contributions</p>
+        <!-- Office Section -->
+        <section id="staffs" class="office" aria-labelledby="offices-heading">
+            <h2 id="offices-heading">Our National Offices</h2>
+            <p>Located in Kisumu City near Moghe Plaza, opposite KCB Bank.</p>
 
-        <div class="row">
-            <div class="facilities-col">
-                <img src="basketball.png" alt="Senior Management">
-                <h3>SENIOR MANAGEMENT</h3>
-                <p>The Chairman: Simons Shava</p>
-            </div>
-            <div class="facilities-col">
-                <img src="user1.jpg" alt="Treasurer">
-                <h3>TREASURER</h3>
-                <p>Enock Talai<br>Make payments here</p>
-            </div>
-            <div class="facilities-col">
-                <img src="cafeteria.png" alt="Secretary">
-                <h3>SECRETARY</h3>
-                <p>Zakayo Odari<br>I write minutes during meetings</p>
-            </div>
-            <div class="facilities-col">
-                <img src="kimaiyo.png" alt="Assistant Secretary">
-                <h3>ASSISTANT SECRETARY</h3>
-                <p>Allan Kimaiyo<br>I write minutes during meetings</p>
-            </div>
-        </div>
-    </section>
+            <div class="row">
+                <figure class="office-col">
+                    <img src="london.png" alt="Graduation square event" loading="lazy">
+                    <figcaption>GRADUATION SQUARE</figcaption>
+                </figure>
 
-    <!-- Testimonials Section -->
-    <section class="testimonials">
-        <h1>What Our Members Say</h1>
-        <p>Here’s what our 10 members have to say</p>
+                <figure class="office-col">
+                    <img src="ren.jpg" alt="Chairman addressing members" loading="lazy">
+                    <figcaption>CHAIRMAN ADDRESSING</figcaption>
+                </figure>
 
-        <div class="row">
-            <!-- Repeat this block for each testimonial -->
-            <div class="testimonials-col">
-                <img src="banner%20(2).jpg" alt="Vincent Kimutai">
-                <div>
-                    <p>Very happy to be part of this winning organization.</p>
-                    <h3>Vincent Kimutai Chepkooit</h3>
-                    <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>
+                <figure class="office-col">
+                    <img src="u.png" alt="Group of members" loading="lazy">
+                    <figcaption>SOME MEMBERS</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- Facilities / Team Section -->
+        <section class="facilities" aria-labelledby="team-heading">
+            <h2 id="team-heading">Our Main Sponsors</h2>
+            <p>Our main source of funds is member contributions.</p>
+
+            <div class="row">
+                <div class="facilities-col">
+                    <img src="basketball.png" alt="Senior management" loading="lazy">
+                    <h3>SENIOR MANAGEMENT</h3>
+                    <p>The Chairman: Simons Shava</p>
+                </div>
+
+                <div class="facilities-col">
+                    <img src="user1.jpg" alt="Treasurer Enock Talai" loading="lazy">
+                    <h3>TREASURER</h3>
+                    <p>Enock Talai — Make payments here</p>
+                </div>
+
+                <div class="facilities-col">
+                    <img src="cafeteria.png" alt="Secretary Zakayo Odari" loading="lazy">
+                    <h3>SECRETARY</h3>
+                    <p>Zakayo Odari — I write minutes during meetings</p>
+                </div>
+
+                <div class="facilities-col">
+                    <img src="kimaiyo.png" alt="Assistant Secretary Allan Kimaiyo" loading="lazy">
+                    <h3>ASSISTANT SECRETARY</h3>
+                    <p>Allan Kimaiyo — I assist with minute-taking</p>
                 </div>
             </div>
-            <!-- Add other testimonials similarly -->
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials" aria-labelledby="testimonials-heading">
+            <h2 id="testimonials-heading">What Our Members Say</h2>
+            <p>Here’s what our members have to say</p>
+
+            <div class="row">
+                <blockquote class="testimonials-col">
+                    <img src="banner%20(2).jpg" alt="Vincent Kimutai" loading="lazy">
+                    <div>
+                        <p>Very happy to be part of this winning organization.</p>
+                        <footer><strong>Vincent Kimutai Chepkooit</strong></footer>
+                        <div class="rating" aria-label="4 out of 5 stars">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </blockquote>
+                <!-- Add other testimonials similarly -->
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section id="contact" class="cta" aria-labelledby="cta-heading">
+            <h2 id="cta-heading">Enroll for Our Meetings — Anywhere in the Country</h2>
+            <a href="mailto:info@fixedgang.example" class="hero-btn">CONTACT US</a>
+        </section>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+        <h3>About Us</h3>
+        <p>We are the Fixed Gang, looking forward to doing business with you. Are you interested?</p>
+
+        <div class="social-icons" aria-hidden="false" role="list">
+            <a href="#" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fa fa-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fa fa-linkedin"></i></a>
         </div>
-    </section>
 
-    <!-- Call to Action -->
-    <section class="cta">
-        <h1>Enroll for Our Meetings<br>Anywhere in the Country</h1>
-        <a href="" class="hero-btn">CONTACT US</a>
-    </section>
+        <p>MADE BY <i class="fa fa-heart-o" aria-hidden="true"></i> SIMONS SHAVA</p>
+    </footer>
 
-    <!-- Footer -->
-    <section class="footer">
-        <h4>About Us</h4>
-        <p>We are the Fixed Gang, looking forward to doing business with you.<br>Are you interested?</p>
-        <div class="icons">
-            <i class="fa fa-facebook"></i>
-            <i class="fa fa-twitter"></i>
-            <i class="fa fa-instagram"></i>
-            <i class="fa fa-linkedin"></i>
-        </div>
-        <p>MADE BY <i class="fa fa-heart-o"></i> SIMONS SHAVA</p>
-    </section>
-
-    <!-- JavaScript for Toggle Menu -->
+    <!-- Small JS to toggle mobile menu (progressive enhancement) -->
     <script>
-        var navLinks = document.getElementById("navLinks");
-        function showMenu() {
-            navLinks.style.right = "0";
-        }
-        function hideMenu() {
-            navLinks.style.right = "-200px";
-        }
-    </script>
+        (function () {
+            var navToggle = document.getElementById('navToggle');
+            var navClose = document.getElementById('navClose');
+            var primaryMenu = document.getElementById('primaryMenu');
 
+            function openMenu() {
+                primaryMenu.hidden = false;
+                navToggle.setAttribute('aria-expanded', 'true');
+                navToggle.setAttribute('aria-label', 'Close menu');
+                // trap focus or manage focus if needed
+            }
+
+            function closeMenu() {
+                primaryMenu.hidden = true;
+                navToggle.setAttribute('aria-expanded', 'false');
+                navToggle.setAttribute('aria-label', 'Open menu');
+                navToggle.focus();
+            }
+
+            navToggle.addEventListener('click', function () {
+                if (primaryMenu.hidden) openMenu(); else closeMenu();
+            });
+
+            if (navClose) {
+                navClose.addEventListener('click', closeMenu);
+            }
+
+            // Close menu on Escape
+            document.addEventListener('keydown', function (e) {
+                if (e.key === 'Escape' && !primaryMenu.hidden) closeMenu();
+            });
+        })();
+    </script>
 </body>
 </html>
